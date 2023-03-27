@@ -13,7 +13,7 @@ import random
 from defs import getUrl, getcards, phone
 API_ID =  27337131
 API_HASH = '695a43d29e73423ad4142b20a736ea42'
-SEND_CHAT = -1001880176512
+SEND_CHAT = -1001850450912
 
 client = TelegramClient('session', API_ID, API_HASH)
 ccs = []
@@ -22,21 +22,7 @@ chats  = [
     # '@fullcuentasgratis','
     '@nexon_community',
     '@SitesYCCS',
-    '@ddrbinscc',
-    '@LiveCCFam',
-    '@i_DropCCs',
-    '@CcsTeamUrban1',
-    '@Live_Credit_Card',
-    '@fullccshack',
-    '@CCsfreehere',
-    '@TeamBlckCard',
-    '@onyxlivesempire',
-    '@ItachiBins',
     '@alvkslspqpqpqoqqq',
-    '@CCAUTH',                                                            '@TEST123ND',
-    '@LOYOAS',
-    '@cclivesblackeagle',
-    '@netflix_gratuit_1'
 ]
 
 with open('cards.txt', 'r') as r:
@@ -75,9 +61,9 @@ async def my_event_handler(m):
     addr = real_random_address()
     fullinfo = f"{cc}|{mes}|{ano}|{cvv}|{names.get_full_name()}|{addr['address1']}|{addr['city']}|{addr['state']}|{addr['postalCode']}|{phone()}|dob: {datetime.strftime(datetime(random.randint(1960, 2005), random.randint(1, 12),random.randint(1, 28), ), '%Y-%m-%d')}|United States Of America"
     text = f"""
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
              **点 𝙸𝚋𝚊𝚒 𝚂𝚌𝚛𝚊𝚙𝚙𝚎𝚛 点**
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬                                     
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬                                   
 **Card** ➪ `{cc}|{mes}|{ano}|{cvv}`
 
 **Status ➪ Approved! ✅**
